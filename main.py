@@ -27,11 +27,11 @@ from about import Ui_about
 from licenseDiag import Ui_licenseDiag
 
 def generateMsg():
-    with open("msgs.txt", "r") as file:
-        msgs = file.read().splitlines()
     if random.randint(0,9) < 5:
         predefMsg = "install NetBSD"
     else:
+        with open("msgs.txt", "r") as file:
+            msgs = file.read().splitlines()
         predefMsg = random.choice(msgs)
     return predefMsg
 
