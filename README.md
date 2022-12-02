@@ -4,7 +4,7 @@ Generate a nee shi-style message. If you are reading this, you should join our [
 
 # Dependency
 
-* PyQt6
+* [PyQt6](https://pypi.org/project/PyQt6/)
 
 # Run
 
