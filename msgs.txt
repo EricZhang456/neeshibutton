@@ -1,3 +1,11 @@
 netbsd
 mintie
 e lick
+vc
+:bugfix_discontent:
+:netbsd:
+m
+h
+l
+fr
+g
