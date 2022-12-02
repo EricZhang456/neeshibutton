@@ -11,3 +11,7 @@ fr
 g
 :bugfix_cringe:
 idk
+:skull:
+oop
+nvm
+o
