@@ -45,7 +45,7 @@ class mainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
         self.actionQuit.triggered.connect(self.quit)
 
     def displayText(self):
-        self.neeshiMsg.insertPlainText (generateMsg() + "\n")
+        self.neeshiMsg.appendPlainText (generateMsg())
     def quit(self):
         app.quit()
     def showAbout(self):
