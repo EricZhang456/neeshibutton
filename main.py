@@ -22,11 +22,13 @@ import random
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 from mainWindow import Ui_mainWindow
+from about import Ui_about
+from licenseDiag import Ui_licenseDiag
 
 def generateMsg():
     with open("msgs.txt", "r") as file:
         msgs = file.read().splitlines()
-    if random.randint(0,9) < 6:
+    if random.randint(0,9) < 5:
         predefMsg = "install NetBSD"
     else:
         predefMsg = random.choice(msgs)
@@ -36,9 +38,36 @@ class mainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
     def __init__(self, *args, obj=None, **kwargs):
         super(mainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
+
         self.neeshiButton.clicked.connect(self.displayText)
+        self.actionAbout.triggered.connect(self.showAbout)
+        self.actionQuit.triggered.connect(self.quit)
+
     def displayText(self):
         self.neeshiMsg.insertPlainText (generateMsg() + "\n")
+    def quit(self):
+        app.quit()
+    def showAbout(self):
+        about = aboutDialog(self)
+        about.exec()
+
+class aboutDialog(QtWidgets.QDialog):
+    def __init__(self, parent=None):
+        super(aboutDialog, self).__init__(parent)
+        self.ui = Ui_about()
+        self.ui.setupUi(self)
+
+        self.ui.licenseButton.clicked.connect(self.displayLicense)
+
+    def displayLicense(self):
+        license = licenseDialog(self)
+        license.exec()
+
+class licenseDialog(QtWidgets.QDialog):
+    def __init__(self, parent=None):
+        super(licenseDialog, self).__init__(parent)
+        self.ui = Ui_licenseDiag()
+        self.ui.setupUi(self)
 
 app = QtWidgets.QApplication(sys.argv)
 

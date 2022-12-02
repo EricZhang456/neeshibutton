@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'windows/license.ui'
+# Form implementation generated from reading ui file 'windows/licenseDiag.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.0
 #
@@ -9,24 +9,24 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_license(object):
-    def setupUi(self, license):
-        license.setObjectName("license")
-        license.resize(400, 300)
-        self.verticalLayout = QtWidgets.QVBoxLayout(license)
+class Ui_licenseDiag(object):
+    def setupUi(self, licenseDiag):
+        licenseDiag.setObjectName("licenseDiag")
+        licenseDiag.resize(400, 300)
+        self.verticalLayout = QtWidgets.QVBoxLayout(licenseDiag)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.textEdit = QtWidgets.QTextEdit(license)
+        self.textEdit = QtWidgets.QTextEdit(licenseDiag)
         self.textEdit.setReadOnly(True)
         self.textEdit.setObjectName("textEdit")
         self.verticalLayout.addWidget(self.textEdit)
 
-        self.retranslateUi(license)
-        QtCore.QMetaObject.connectSlotsByName(license)
+        self.retranslateUi(licenseDiag)
+        QtCore.QMetaObject.connectSlotsByName(licenseDiag)
 
-    def retranslateUi(self, license):
+    def retranslateUi(self, licenseDiag):
         _translate = QtCore.QCoreApplication.translate
-        license.setWindowTitle(_translate("license", "License"))
-        self.textEdit.setHtml(_translate("license", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        licenseDiag.setWindowTitle(_translate("licenseDiag", "License"))
+        self.textEdit.setHtml(_translate("licenseDiag", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><title>GNU General Public License v3.0 - GNU Project - Free Software Foundation (FSF)</title><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Cantarell\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
@@ -145,8 +145,8 @@ class Ui_license(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    license = QtWidgets.QDialog()
-    ui = Ui_license()
-    ui.setupUi(license)
-    license.show()
+    licenseDiag = QtWidgets.QDialog()
+    ui = Ui_licenseDiag()
+    ui.setupUi(licenseDiag)
+    licenseDiag.show()
     sys.exit(app.exec())

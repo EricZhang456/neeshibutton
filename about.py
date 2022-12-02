@@ -20,19 +20,19 @@ class Ui_about(object):
         about.setSizePolicy(sizePolicy)
         self.verticalLayout = QtWidgets.QVBoxLayout(about)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label = QtWidgets.QLabel(about)
-        self.label.setObjectName("label")
-        self.verticalLayout.addWidget(self.label)
-        self.label_2 = QtWidgets.QLabel(about)
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout.addWidget(self.label_2)
-        self.plainTextEdit = QtWidgets.QPlainTextEdit(about)
-        self.plainTextEdit.setReadOnly(True)
-        self.plainTextEdit.setObjectName("plainTextEdit")
-        self.verticalLayout.addWidget(self.plainTextEdit)
-        self.pushButton = QtWidgets.QPushButton(about)
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout.addWidget(self.pushButton)
+        self.title = QtWidgets.QLabel(about)
+        self.title.setObjectName("title")
+        self.verticalLayout.addWidget(self.title)
+        self.desc = QtWidgets.QLabel(about)
+        self.desc.setObjectName("desc")
+        self.verticalLayout.addWidget(self.desc)
+        self.legal = QtWidgets.QPlainTextEdit(about)
+        self.legal.setReadOnly(True)
+        self.legal.setObjectName("legal")
+        self.verticalLayout.addWidget(self.legal)
+        self.licenseButton = QtWidgets.QPushButton(about)
+        self.licenseButton.setObjectName("licenseButton")
+        self.verticalLayout.addWidget(self.licenseButton)
 
         self.retranslateUi(about)
         QtCore.QMetaObject.connectSlotsByName(about)
@@ -40,14 +40,14 @@ class Ui_about(object):
     def retranslateUi(self, about):
         _translate = QtCore.QCoreApplication.translate
         about.setWindowTitle(_translate("about", "About"))
-        self.label.setText(_translate("about", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">neeshibutton</span></p></body></html>"))
-        self.label_2.setText(_translate("about", "<html><head/><body><p align=\"center\">Generate a nee shi-style message</p></body></html>"))
-        self.plainTextEdit.setPlainText(_translate("about", "neeshibutton  Copyright (C) 2022 Eric Zhang\n"
+        self.title.setText(_translate("about", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">neeshibutton</span></p></body></html>"))
+        self.desc.setText(_translate("about", "<html><head/><body><p align=\"center\">Generate a nee shi-style message</p></body></html>"))
+        self.legal.setPlainText(_translate("about", "neeshibutton  Copyright (C) 2022 Eric Zhang\n"
 "\n"
 "This program comes with ABSOLUTELY NO WARRANTY; for details click \"License\".\n"
 "\n"
 "This is free software, and you are welcome to redistribute it under certain conditions; click \"License\" for details."))
-        self.pushButton.setText(_translate("about", "License"))
+        self.licenseButton.setText(_translate("about", "License"))
 
 
 if __name__ == "__main__":

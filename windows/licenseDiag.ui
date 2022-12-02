@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>license</class>
- <widget class="QDialog" name="license">
+ <class>licenseDiag</class>
+ <widget class="QDialog" name="licenseDiag">
   <property name="geometry">
    <rect>
     <x>0</x>
