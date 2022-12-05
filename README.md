@@ -10,11 +10,11 @@ A classic Visual Basic (<=6) ""port"" is available in the `classicvb` directory.
 
 * [PyQt6](https://pypi.org/project/PyQt6/)
 
+Classic Visual Basic ""port"" requires Internet Explorer 4 and up.
+
 # Run
 
 * Run `main.py`
-
-Classic Visual Basic ""port"" requires Internet Explorer 4 and up.
 
 # License
 
