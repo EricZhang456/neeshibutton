@@ -292,3 +292,21 @@ tags
 
 # End of https://www.toptal.com/developers/gitignore/api/qtcreator,python,qt,vim,linux
 
+
+# VB
+*.vbw
+*.csi
+*.exp
+*.lib
+*.lvw
+*.dca
+*.scc
+*.SCC
+*.tmp
+*.exe
+*.bat
+*.bak
+*.zip
+*.old
+*.enc
+*.key
