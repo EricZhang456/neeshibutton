@@ -4,6 +4,8 @@ Generate a nee shi-style message. If you are reading this, you should join our [
 
 A [Scratch](https://scratch.mit.edu/) ""port"" is available in the `scratch` directory.
 
+A classic Visual Basic (<=6) ""port"" is available in the `classicvb` directory. (featuring awful hacks and code from Stack Overflow)
+
 # Dependency
 
 * [PyQt6](https://pypi.org/project/PyQt6/)
