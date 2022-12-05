@@ -154,9 +154,6 @@ Private Function generateMsg() As String
         msgs = Split(readFile("..\msgs.txt"), vbCrLf)
         predefMsg = msgs(Int((Rnd * (UBound(msgs) - LBound(msgs) + 1) + LBound(msgs))))
     End If
-    ' TODO: read msg.txt
-    ' import as array
-    ' select a random item from the array for Else
     generateMsg = predefMsg
 End Function
 
