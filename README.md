@@ -14,6 +14,8 @@ A classic Visual Basic (<=6) ""port"" is available in the `classicvb` directory.
 
 * Run `main.py`
 
+Classic Visual Basic ""port"" requires Internet Explorer 4 and up.
+
 # License
 
 Licensed under [GPL 3.0 or later](https://www.gnu.org/licenses/gpl-3.0).
